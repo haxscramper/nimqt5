@@ -10,20 +10,8 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QAbstractItemModelTesterPrivate {.bycopy, importcpp: r"<QtTest/qabstractitemmodeltester.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QAbstractItemModelTester {.bycopy,
                              importcpp: r"<QtTest/qabstractitemmodeltester.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QAbstractItemModel {.bycopy, importcpp: r"<QtTest/qabstractitemmodeltester.h>".} = object
     
 
 

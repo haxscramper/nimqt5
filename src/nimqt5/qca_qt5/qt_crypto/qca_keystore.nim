@@ -47,13 +47,6 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStoreManagerPrivate {.bycopy,
-                              importcpp: r"<Qca-qt5/QtCrypto/qca_keystore.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAKeyStore {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_keystore.h>".} = object
     
 
@@ -66,19 +59,7 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStoreTracker {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_keystore.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAKeyStoreManager {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_keystore.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStorePrivate {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_keystore.h>".} = object
     
 
 

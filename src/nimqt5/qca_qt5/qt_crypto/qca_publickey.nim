@@ -168,17 +168,17 @@ type
 
 
 
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCARSAPublicKey {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_publickey.h>".} = object
-    
-
-
-
   # Declaration created in: hc_wrapgen.nim(877, 20)
   QCAConvertResultCxx* {.importcpp: "QCA::ConvertResult",
                          header: r"<Qca-qt5/QtCrypto/qca_publickey.h>".} = enum
     qCAConvertResult_ConvertGood = 0, qCAConvertResult_ErrorDecode = 1,
     qCAConvertResult_ErrorPassphrase = 2, qCAConvertResult_ErrorFile = 3
+
+
+
+  # Declaration created in: hc_wrapgen.nim(679, 20)
+  QCARSAPublicKey {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_publickey.h>".} = object
+    
 
 
 

@@ -12,15 +12,6 @@ import
 
 
 
-type
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QQuickItem {.bycopy, importcpp: r"<QtQuickTest/quicktest.h>".} = object
-    
-
-
-
-
 
 # Declaration created in: hc_wrapgen.nim(140, 36)
 # Wrapper for ``

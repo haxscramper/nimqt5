@@ -40,18 +40,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlSimpleReaderPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlAttributesPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QXmlDTDHandler {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
     
 
@@ -59,12 +47,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QXmlLocator {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlDefaultHandlerPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
     
 
 
@@ -112,13 +94,13 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlLexicalHandler {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
+  QXmlParseException {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
     
 
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlParseException {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
+  QXmlLexicalHandler {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
     
 
 
@@ -130,31 +112,7 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlLocatorPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QXmlReader {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlInputSourcePrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlNamespaceSupportPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QXmlParseExceptionPrivate {.bycopy, importcpp: r"<QtXml/qxml.h>".} = object
     
 
 

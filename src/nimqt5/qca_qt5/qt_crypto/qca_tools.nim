@@ -20,24 +20,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QByteArray {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_tools.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTextStream {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_tools.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QString {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_tools.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAMemoryRegion {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_tools.h>".} = object
     
 

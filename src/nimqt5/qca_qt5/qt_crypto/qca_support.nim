@@ -66,12 +66,6 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAConsolePrivate {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_support.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAConsole {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_support.h>".} = object
     
 
@@ -103,13 +97,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAFileWatch {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_support.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAConsoleReferencePrivate {.bycopy,
-                               importcpp: r"<Qca-qt5/QtCrypto/qca_support.h>".} = object
     
 
 

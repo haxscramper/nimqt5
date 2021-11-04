@@ -10,12 +10,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  HIDDriverHandler {.bycopy, importcpp: r"<QtInputSupport/qintegrityhidmanager.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QIntegrityHIDManager {.bycopy,
                          importcpp: r"<QtInputSupport/qintegrityhidmanager.h>".} = object
     

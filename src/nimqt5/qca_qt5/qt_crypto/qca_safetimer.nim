@@ -25,18 +25,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QEvent {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_safetimer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTimerEvent {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_safetimer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCASafeTimer {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_safetimer.h>".} = object
     
 

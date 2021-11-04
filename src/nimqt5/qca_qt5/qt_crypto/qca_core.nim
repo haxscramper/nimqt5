@@ -124,19 +124,7 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCARandom {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCATokenAsker {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACertificateCollection {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
     
 
 
@@ -148,25 +136,7 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStore {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAInitializationVector {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStoreInfo {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStoreManager {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
     
 
 
@@ -183,12 +153,6 @@ type
 
 
 
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAKeyStoreEntry {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
   # Declaration created in: hc_wrapgen.nim(514, 24)
   QCAProviderList* = QList
 
@@ -196,12 +160,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QCABasicContext {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCAGlobal {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_core.h>".} = object
     
 
 

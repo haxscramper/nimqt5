@@ -10,24 +10,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QSvgRenderer {.bycopy, importcpp: r"<QtSvg/qsvgwidget.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QSvgWidgetPrivate {.bycopy, importcpp: r"<QtSvg/qsvgwidget.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QPaintEvent {.bycopy, importcpp: r"<QtSvg/qsvgwidget.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QSvgWidget {.bycopy, importcpp: r"<QtSvg/qsvgwidget.h>".} = object
     
 

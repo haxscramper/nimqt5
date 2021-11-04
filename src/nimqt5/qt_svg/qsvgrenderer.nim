@@ -10,31 +10,7 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QPainter {.bycopy, importcpp: r"<QtSvg/qsvgrenderer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QSvgRenderer {.bycopy, importcpp: r"<QtSvg/qsvgrenderer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QByteArray {.bycopy, importcpp: r"<QtSvg/qsvgrenderer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QSvgRendererPrivate {.bycopy, importcpp: r"<QtSvg/qsvgrenderer.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTransform {.bycopy, importcpp: r"<QtSvg/qsvgrenderer.h>".} = object
     
 
 

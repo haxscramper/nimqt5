@@ -67,33 +67,6 @@ import
 
 
 
-type
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QObject {.bycopy, importcpp: r"<QtTest/qtestcase.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  Qfloat16 {.bycopy, importcpp: r"<QtTest/qtestcase.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTestData {.bycopy, importcpp: r"<QtTest/qtestcase.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QRegularExpression {.bycopy, importcpp: r"<QtTest/qtestcase.h>".} = object
-    
-
-
-
-
 
 # Declaration created in: hc_wrapgen.nim(140, 36)
 # Wrapper for ``

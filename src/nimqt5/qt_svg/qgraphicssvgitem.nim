@@ -10,19 +10,7 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QSvgRenderer {.bycopy, importcpp: r"<QtSvg/qgraphicssvgitem.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QGraphicsSvgItem {.bycopy, importcpp: r"<QtSvg/qgraphicssvgitem.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QGraphicsSvgItemPrivate {.bycopy, importcpp: r"<QtSvg/qgraphicssvgitem.h>".} = object
     
 
 

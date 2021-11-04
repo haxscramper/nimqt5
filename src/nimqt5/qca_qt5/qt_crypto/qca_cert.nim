@@ -87,12 +87,6 @@ type
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACertContext {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QCACertificateRequest {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
     
 
@@ -100,12 +94,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QCACertificateInfoPair {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACSRContext {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
     
 
 
@@ -177,12 +165,6 @@ type
 
 
 
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACertificate {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
-    
-
-
-
   # Declaration created in: hc_wrapgen.nim(877, 20)
   QCACertificateRequestFormat* = enum
     crfPkcs10, crfSpkac
@@ -191,6 +173,12 @@ type
 
   # Declaration created in: hc_wrapgen.nim(514, 24)
   QCACertificateInfo* = QMultiMap
+
+
+
+  # Declaration created in: hc_wrapgen.nim(679, 20)
+  QCACertificate {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
+    
 
 
 
@@ -222,9 +210,10 @@ type
 
 
 
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACRL {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
-    
+  # Declaration created in: hc_wrapgen.nim(877, 20)
+  QCAUsageMode* = enum
+    umAny, umTlsserver, umTlsclient, umCodesigning, umEmailprotection,
+    umTimestamping, umCrlsigning
 
 
 
@@ -258,10 +247,9 @@ type
 
 
 
-  # Declaration created in: hc_wrapgen.nim(877, 20)
-  QCAUsageMode* = enum
-    umAny, umTlsserver, umTlsclient, umCodesigning, umEmailprotection,
-    umTimestamping, umCrlsigning
+  # Declaration created in: hc_wrapgen.nim(679, 20)
+  QCACRL {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
+    
 
 
 
@@ -273,12 +261,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAPGPKey {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCACRLContext {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_cert.h>".} = object
     
 
 

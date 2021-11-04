@@ -40,14 +40,14 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCASecureMessageSystem {.bycopy,
-                           importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
+  QCASecureMessage {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
     
 
 
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QCASecureMessage {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
+  QCASecureMessageSystem {.bycopy,
+                           importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
     
 
 
@@ -70,12 +70,6 @@ type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
   QCAOpenPGP {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QDateTime {.bycopy, importcpp: r"<Qca-qt5/QtCrypto/qca_securemessage.h>".} = object
     
 
 

@@ -10,18 +10,6 @@ import
 type
 
   # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTestDataPrivate {.bycopy, importcpp: r"<QtTest/qtestdata.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
-  QTestTable {.bycopy, importcpp: r"<QtTest/qtestdata.h>".} = object
-    
-
-
-
-  # Declaration created in: hc_wrapgen.nim(679, 20)
   QTestData {.bycopy, importcpp: r"<QtTest/qtestdata.h>".} = object
     
 

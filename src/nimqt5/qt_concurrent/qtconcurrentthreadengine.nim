@@ -7,7 +7,7 @@ import
 
 
 import
-  ../../qt_core / qfuture
+  ../qt_core / qfuture
 
 
 
