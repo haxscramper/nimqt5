@@ -1,48 +1,58 @@
-import
-  hcparse/[wrap_common]
+import hcparse
+import std/[strutils, options]
+import hmisc/other/hlogger
 
-import
-  cxxstd/make_wrap as cxxstd_wrap
+startHax()
 
-import
-  hmisc/other/hlogger
-
-func toLowerAscii*(f: RelDir): RelDir =
-  RelDir(f.getStr().toLowerAscii())
-
-let qtbase = AbsDir("/usr/include/qt/")
-
-
-let parseConf = baseCppParseConf.withIt do:
-  it.includepaths.add @[AbsDir "/usr/include/qt"]
-  it.globalFlags = @["-xc++"]
-
-  for dir in walkDir(qtbase, AbsDir):
-    it.includePaths.add dir
+let
+  dir     = AbsDir"/usr/include"
+  tmpDir  = getAppTempDir() / "qt5"
+  package = "qt5"
+  base = dir / "qt"
+  targetQtParts = @["QtGui", "QtCore"]
+  l = newTermLogger()
 
 
-var wrapConf = baseCppWrapConf.withDeepIt do:
-  it.parseConf   = parseConf
-  it.baseDir     = qtbase
-  it.wrapName    = "nimqt5"
-  it.serializeTo = some cwd() / "serial"
-  it.nimoutDir   = cwd() / "out"
-  it.onlySerial  = true
-  it.depsConf    = @[cxxstd_wrap.wrapConf, baseCppWrapConf]
-  it.logger      = newTermLogger(file = true, line = true)
+var sourceFiles: seq[AbsFile]
+for file in walkDir(base, RelFile, exts = @["h"], recurse = true):
+  let
+    (dir, name, ext) = file.splitFile()
+    parts = dir.getStr().split("/")
+
+  if name.endsWith("_p") or
+     "private" in parts or
+     parts[0] notin targetQtParts or
+     len(parts) > 1:
+    continue
+
+  sourceFiles.add base / file
+
+var parseConf = baseCParseConf.withIt do:
+  it.sysIncludes.add base.getStr()
+  it.sysIncludes.add "/usr/include/c++/11.1.0"
+  it.sysIncludes.add "/usr/include/c++/11.1.0/x86_64-pc-linux-gnu"
+
+  let
+    noa = newSeq[string]()
+    nodef = none string
+
+  it.macroDefs = @[
+    ("__linux__",   noa, nodef),
+    ("__x86_64__",  noa, nodef),
+    ("__GNUC__",    noa, nodef),
+    # ("__cplusplus", noa, some "201103L")
+  ]
+
+let map = expandViaWave(sourceFiles, tmpDir, parseConf, logger = l)
 
 
-when isMainModule:
-  wrapConf.logger.leftAlignFiles = 18
-  let files = collect(newSeq):
-    for file in walkDir(qtbase, AbsFile, recurse = true):
-      if file.hasExt("h") and
-         not file.name().endsWith("_p") and
-         not (["private",
-               "QtPlatformHeaders",
-               "qwglnativecontext", # Windows-specific headers
-               "qeglnativecontext"
-         ] in file.getStr()):
-        file
+#   map
+#   conf    = initCSharedLibFixConf("ssh2", package, false, dir, map)
+#   wrapped = tmpDir.wrapViaTs(conf).postFixEntries(con)
+#   outDir  = currentAbsSourceDir()
+#   grouped = writeFiles(outDir, wrapped, cCodegenConf, extraTypes = @{
+#     cxxName("_LIBSSH2_SESSION"): cxxLibImport(package, @["libssh2_config"])
+#   })
 
-  discard wrapAllFiles(files, wrapConf, parseConf)
+# validateGenerated(grouped)
+# echo "done"
